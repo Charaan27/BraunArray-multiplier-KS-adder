@@ -22,4 +22,4 @@ For a n\*m multiplication, the number of bits in the product cannot be less than
 - OS: [CentOS Linux 7.9.2009](https://wiki.centos.org/Manuals/ReleaseNotes/CentOS7.2009#Packages_released_as_7.8.2003_updates_with_older_packages_on_the_7.9.2009_install_media)
 - Design Platform: [Synopsys Custom Design](https://www.synopsys.com/implementation-and-signoff/custom-design-platform.html) - comes with [Synopsys Custom Compiler](https://www.synopsys.com/implementation-and-signoff/custom-design-platform/custom-compiler.html)
 - Simulation Software: [PrimeSim HSPICE](https://www.synopsys.com/implementation-and-signoff/ams-simulation/primesim-hspice.html)
-- CMOS Process used for device modeling: saed32nm PDK
+- CMOS Process used for device modeling: SAED 32/28nm PDK
