@@ -1,5 +1,4 @@
 # BraunArray-multiplier-KS-adder
-![Last Commit](https://img.shields.io/github/last-commit/Charaan27/BraunArray-multiplier-KS-adder?color=green)
 
 This repository contains a detailed report on the design of a 4x4 Braun Array Multiplier, with a 3-bit Kogge-Stone Adder. The design and simulation was done using **Synopsys Custom Design Compiler** and the modeling was done using **Synopsys SAED 32nm CMOS technology process**, for the event [_Cloud Based Analog IC Design Hackathon_](https://hackathoniith.in) conducted by the [Department of Electrical Engineering at IIT Hyderabad](https://ee.iith.ac.in), and sponsored by [Synopsys India](https://www.synopsys.com/company/contact-synopsys/office-locations/india/about-synopsys-india.html) and [VLSI System Design (VSD) Corp.](https://www.vlsisystemdesign.com)
 
