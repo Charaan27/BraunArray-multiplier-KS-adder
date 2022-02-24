@@ -8,14 +8,16 @@ The need for efficient binary multipliers that could be incorporated in Digital 
 
 # Reference Circuit
 An n-bit Braun Array Multiplier is realised using (n−1)<sup>2</sup> full adders, n<sup>2</sup> AND gates and a (n−1) bit carry look-ahead adder. Hence for a 4-bit Braun Array Multiplier, we require **9 Full Adders, 16 Logic AND gates and a 3-bit Kogge-Stone Adder**. The reference circuit of the same is shown below.
-
-![reference_circuit](https://github.com/Charaan27/BraunArray-multiplier-KS-adder/blob/main/project/references/reference_circuit.png)
-
+<p align="center">
+  <img src="https://github.com/Charaan27/BraunArray-multiplier-KS-adder/blob/main/project/references/reference_circuit.png">
+</p>
 # Reference Waveform
 For a n\*m multiplication, the number of bits in the product cannot be less than max(m,n) and cannot be more than (m+n), unless one of the two numbers is zero. If the two operands are of similar size (i.e.) n\*n, then the product is of size 2n. Hence for a 4-bit multiplication, the operands are of size 4-bits, while the product is of size 8-bits. In total we will have 8 waveforms for the input (4 + 4 inputs) and 8 waveforms for the output, leading to a total of 16 waveforms. The reference waveform for 4-bit multiplication could be found below.  
-</br>
-![reference_waveform](https://github.com/Charaan27/BraunArray-multiplier-KS-adder/blob/main/project/references/reference_waveform.png)
-</br>
+
+<p align="center">
+  <br>
+  <img src="https://github.com/Charaan27/BraunArray-multiplier-KS-adder/blob/main/project/references/reference_waveform.png">
+</p>
 
 # Tools used
 
