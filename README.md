@@ -32,9 +32,17 @@ This section follows the list of subcircuits designed for the multiplier, along 
 ## 2-input AND gate
 It is one of the digital logic gates that implements logical conjunction. That is to say, the output of an AND gate is HIGH only if all of it's inputs ar HIGH, else it is LOW. A CMOS AND gate consists of three sections - PMOS, NMOS and Inverter. Each of the two inputs is given to the PMOS and NMOS section respectively, and the output is taken from the inverter section. The schematic of the implemented 2-input CMOS Logic AND gate is as follows. along with the symbol constructed and the output. It is observed that the output of the implemented AND gate is HIGH only when all the inputs are HIGH.
 
-The output obtained for the 2-input AND gate is give below. It is observed that the output is HIGH only when all of it's inputs are HIGH.
 <p align="center">
   <br>
   <img src="https://github.com/Charaan27/BraunArray-multiplier-KS-adder/blob/main/project/cmosAND/cmosAND_final.png">
+  <br>
+</p>
+
+## 2-input OR gate
+It is one of the digital logic gates that implements logical disjunction. That is to say, the output of an OR gate is LOW only if all of it's inputs ar LOW, else it is HIGH. A CMOS OR gate consists of three sections - PMOS, NMOS and Inverter. Each of the two inputs is given to the PMOS and NMOS section respectively, and the output is taken from the inverter section. The schematic of the implemented 2-input CMOS Logic OR gate is as follows. along with the symbol constructed and the output. It is observed that the output of the implemented OR gate is LOW only when all the inputs are LOW.
+
+<p align="center">
+  <br>
+  <img src="https://github.com/Charaan27/BraunArray-multiplier-KS-adder/blob/main/project/cmosOR/cmosOR_final.png">
   <br>
 </p>
