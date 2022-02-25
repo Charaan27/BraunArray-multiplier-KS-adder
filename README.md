@@ -46,3 +46,5 @@ It is one of the digital logic gates that implements logical disjunction. That i
   <img src="https://github.com/Charaan27/BraunArray-multiplier-KS-adder/blob/main/project/cmosOR/cmosOR_final.png">
   <br>
 </p>
+
+This is tested
