@@ -2,6 +2,18 @@
 
 This repository contains a detailed report on the design of a 4x4 Braun Array Multiplier, with a 3-bit Kogge-Stone Adder. The design and simulation was done using **Synopsys Custom Design Compiler** and the modeling was done using **Synopsys SAED 32nm CMOS technology process**, for the event [_Cloud Based Analog IC Design Hackathon_](https://hackathoniith.in) conducted by the [Department of Electrical Engineering at IIT Hyderabad](https://ee.iith.ac.in), and sponsored by [Synopsys India](https://www.synopsys.com/company/contact-synopsys/office-locations/india/about-synopsys-india.html) and [VLSI System Design (VSD) Corp.](https://www.vlsisystemdesign.com)
 
+# Contents
+-[Introduction](#Introduction)
+-[Reference Circuit](#Reference-Circuit)
+-[Reference Waveform](#Reference-Waveform)
+-[Tools used](#Tools-used)
+-[Subcircuits](#Subcircuits)
+  -[2-input AND Gate](#2-input-AND-Gate)
+  -[2-input OR Gate](#2-input-OR-Gate)
+  -[2-input XOR Gate](#2-input-XOR-Gate)
+  -[Half Adder](#Half-Adder)
+  -[Full-Adder](#Full-Adder)
+
 # Introduction
 The need for efficient binary multipliers that could be incorporated in Digital ICs has seen an unprecendented rise over the last few years. The conventional architecture of a binary multiplier involves a series of AND gates that will generate what is called as a _partial product_, and later these are added up with each other to produce the product. This corresponds to a variety of binary multipliers known as **parallel array multipliers**. However, this is an extensively computational process, when compared with other binary operations. But, binary multiplication is a very important arithmetic operation, which is primarily being used in Digital Signal Processing applications. For example, the _Multiply and Accumulate (MAC)_ operation is used in implementing Finite Impulse Response (FIR) Filters, and other DSP algorithms. Hence it becomes important to find out ways to optimize the architecure of binary multipliers thus increasing its efficiency, while decreasing its area occupancy, computation time and power dissipation. One of the efficient parallel array multipliers that is widely used for this purpose is the **Braun Array Multiplier**. It is a type of a high-speed parallel array multiplier that comes with a relatively lesser area and delay, thus making it one of the ideal array multipliers to use. Braun Array Multipliers require a **carry look-ahead adder** in the design. In order to improve the speed and efficiency of the multiplier, a **Kogge-Stone Adder** has been implemented in the place of the carry look-ahead adder. It is a form of a parallel-prefix adder that comes with a lower fan-out at each of its stages, thus increasing the performance for typical CMOS processes.
 
@@ -56,7 +68,7 @@ It is one of the digital logic gates that implements the inequality function. Th
   <br>
 </p>
 
-## Half Adder Circuit
+## Half Adder
 The half adder is a type of binary adder that adds two binary digits, and produces two outputs which are the SUM and CARRY. The SUM is the output of the XOR gates when the two operands ae passed as inputs, and the CARRY is the output of the AND operation of the two operands. Hence the circuit contains an XOR and an AND gate. The circuit, along with the symbol and the waveform are given below. It is observed that the SUM is zero only if either both the operands are 0 or 1 (indicating an overflow). The carry is zero for all cases except for inputs 1 and 1. The [netlist](https://github.com/Charaan27/BraunArray-multiplier-KS-adder/blob/main/netlists/halfadder_netlist.spi) is attached herewith.
 
 
@@ -66,7 +78,7 @@ The half adder is a type of binary adder that adds two binary digits, and produc
   <br>
 </p>
 
-## Full Adder Circuit
+## Full Adder
 A full adder is yet another type of binary multiplier, which also accounts for the values carried in as well as carried out, along with the binary operands. A one-bit full adder, has three inputs - A, B and C<sub>in</sub>, and gives out two outputs SUM and C<sub>out</sub>. To add two operands of size n-bits, we will require n full adders, where each full adder corresponds to the addition of each bit of the two operands. A full adder circuit can be realized using two half adders and one XOR gate. The circuit, along with the symbol, waveform and [netlist](https://github.com/Charaan27/BraunArray-multiplier-KS-adder/blob/main/netlists/fulladder_netlist.spi) are given.
 
 <p align="center">
