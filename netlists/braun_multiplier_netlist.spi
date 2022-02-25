@@ -5,7 +5,7 @@
 .lib 'saed32nm.lib' TT
 
 *Custom Compiler Version S-2021.09
-*Fri Feb 25 18:33:07 2022
+*Fri Feb 25 18:43:12 2022
 
 .global gnd!
 ********************************************************************************
@@ -187,7 +187,8 @@ v1 x0 gnd! dc=0 pulse ( 0 1.8 0 0.1n 0.1n 40u 80u )
 
 .option primesim_remove_probe_prefix = 0
 .probe v(*) i(*) level=1
-.probe tran v(x0) v(x1) v(x2) v(x3) v(y0) v(y1) v(y2) v(y3) v(p0) v(p1) v(p2) v(p3) v(p4) v(p5) v(p6) v(p7)
+.probe tran v(p0) v(p1) v(p2) v(p3) v(p4) v(p5) v(p6) v(p7) v(x0) v(x1) v(x2)
++ v(x3) v(y0) v(y1) v(y2) v(y3)
 
 .temp 25
 
