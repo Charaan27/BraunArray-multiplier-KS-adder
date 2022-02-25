@@ -58,3 +58,11 @@ It is one of the digital logic gates that implements the inequality function. Th
 
 ## Half Adder Circuit
 Thr half adder is a type of binary adder that adds two binary digits, and produces two outputs which are the SUM and CARRY. The SUM is the output of the XOR gates when the two operands ae passed as inputs, and the CARRY is the output of the AND operation of the two operands. Hence the circuit contains an XOR and an AND gate. The circuit, along with the symbol and the waveform are given below. It is observed that the SUM is zero only if either both the operands are 0 or 1 (indicating an overflow). The carry is zero for all cases except for inputs 1 and 1. The [netlist](https://github.com/Charaan27/BraunArray-multiplier-KS-adder/blob/main/netlists/halfadder_netlist.spi) is attached herewith.
+
+
+<p align="center">
+  <br>
+  <img src="https://github.com/Charaan27/BraunArray-multiplier-KS-adder/blob/main/project/half_adder/halfadder_final.png">
+  <br>
+</p>
+
