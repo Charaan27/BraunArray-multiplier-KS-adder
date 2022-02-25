@@ -71,6 +71,6 @@ A full adder is yet another type of binary multiplier, which also accounts for t
 
 <p align="center">
   <br>
-  <img src="https://github.com/Charaan27/BraunArray-multiplier-KS-adder/tree/main/project/full_adder">
+  <img src="https://github.com/Charaan27/BraunArray-multiplier-KS-adder/blob/main/project/full_adder/fulladder_final.png">
   <br>
 </p>
