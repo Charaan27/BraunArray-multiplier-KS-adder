@@ -1,0 +1,66 @@
+*  Generated for: PrimeSim
+*  Design library name: braun_mult
+*  Design cell name: cmosOR_tb
+*  Design view name: schematic
+.lib 'saed32nm.lib' TT
+
+*Custom Compiler Version S-2021.09
+*Fri Feb 25 17:22:12 2022
+
+.global gnd!
+********************************************************************************
+* Library          : braun_mult
+* Cell             : cmosOR
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt cmosor a_in b_in out
+xm4 out net25 net17 net17 p105 w=0.1u l=0.03u nf=1 m=1
+xm2 net10 b_in net25 net10 p105 w=0.1u l=0.03u nf=1 m=1
+xm1 net10 a_in net17 net17 p105 w=0.1u l=0.03u nf=1 m=1
+xm6 net25 a_in gnd! gnd! n105 w=0.1u l=0.03u nf=1 m=1
+xm5 out net25 gnd! gnd! n105 w=0.1u l=0.03u nf=1 m=1
+xm7 gnd! b_in net25 gnd! n105 w=0.1u l=0.03u nf=1 m=1
+v8 net17 gnd! dc=1.8
+.ends cmosor
+
+********************************************************************************
+* Library          : braun_mult
+* Cell             : cmosOR_tb
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+xi0 a_in b_in out cmosor
+v2 b_in gnd! dc=0 pulse ( 1.8 0 0 0.1n 0.1n 10u 20u )
+v1 a_in gnd! dc=0 pulse ( 1.8 0 0 0.1n 0.1n 20u 40u )
+
+
+
+
+
+
+
+
+.tran '0.1u' '40u' name=tran
+
+.option primesim_remove_probe_prefix = 0
+.probe v(*) i(*) level=1
+.probe tran v(a_in) v(b_in) v(out)
+
+.temp 25
+
+
+
+.option primesim_output=wdf
+
+
+.option parhier = LOCAL
+
+
+
+
+
+
+.end

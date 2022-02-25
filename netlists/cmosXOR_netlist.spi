@@ -1,0 +1,74 @@
+*  Generated for: PrimeSim
+*  Design library name: braun_mult
+*  Design cell name: cmosXOR_tb
+*  Design view name: schematic
+.lib 'saed32nm.lib' TT
+
+*Custom Compiler Version S-2021.09
+*Fri Feb 25 17:17:15 2022
+
+.global gnd!
+********************************************************************************
+* Library          : braun_mult
+* Cell             : cmosXOR
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt cmosxor a_in b_in y_out
+xm15 y_out net69 net63 net63 p105 w=0.1u l=0.03u nf=1 m=1
+xm7 net29 a_in net69 net29 p105 w=0.1u l=0.03u nf=1 m=1
+xm6 net69 net13 net29 net29 p105 w=0.1u l=0.03u nf=1 m=1
+xm5 net63 net50 net29 net63 p105 w=0.1u l=0.03u nf=1 m=1
+xm4 net29 b_in net63 net63 p105 w=0.1u l=0.03u nf=1 m=1
+xm2 net13 b_in net63 net63 p105 w=0.1u l=0.03u nf=1 m=1
+xm0 net50 a_in net63 net63 p105 w=0.1u l=0.03u nf=1 m=1
+xm16 y_out net69 gnd! gnd! n105 w=0.1u l=0.03u nf=1 m=1
+xm11 gnd! a_in net44 gnd! n105 w=0.1u l=0.03u nf=1 m=1
+xm10 net47 net50 gnd! gnd! n105 w=0.1u l=0.03u nf=1 m=1
+xm9 net44 net13 net69 net44 n105 w=0.1u l=0.03u nf=1 m=1
+xm8 net69 b_in net47 net47 n105 w=0.1u l=0.03u nf=1 m=1
+xm3 net13 b_in gnd! gnd! n105 w=0.1u l=0.03u nf=1 m=1
+xm1 net50 a_in gnd! gnd! n105 w=0.1u l=0.03u nf=1 m=1
+v17 net63 gnd! dc=1.8
+.ends cmosxor
+
+********************************************************************************
+* Library          : braun_mult
+* Cell             : cmosXOR_tb
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+xi1 a_in b_in y_out cmosxor
+v3 b_in gnd! dc=0 pulse ( 0 1.8 0 0.1n 0.1n 5u 10u )
+v2 a_in gnd! dc=0 pulse ( 0 1.8 0 0.1n 0.1n 10u 20u )
+
+
+
+
+
+
+
+
+.tran '0.1u' '40u' name=tran
+
+.option primesim_remove_probe_prefix = 0
+.probe v(*) i(*) level=1
+.probe tran v(a_in) v(b_in) v(y_out)
+
+.temp 25
+
+
+
+.option primesim_output=wdf
+
+
+.option parhier = LOCAL
+
+
+
+
+
+
+.end
