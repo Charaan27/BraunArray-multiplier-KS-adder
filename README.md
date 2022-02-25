@@ -39,7 +39,7 @@ It is one of the digital logic gates that implements logical conjunction. That i
 
 
 ## 2-input OR gate
-It is one of the digital logic gates that implements logical disjunction. That is to say, the output of an OR gate is LOW only if all of it's inputs ar LOW, else it is HIGH. A CMOS OR gate consists of three sections - PMOS, NMOS and Inverter. Each of the two inputs is given to the PMOS and NMOS section respectively, and the output is taken from the inverter section. The schematic of the implemented 2-input CMOS Logic OR gate is as follows. along with the symbol constructed and the output. It is observed that the output of the implemented OR gate is LOW only when all the inputs are LOW.
+It is one of the digital logic gates that implements logical disjunction. That is to say, the output of an OR gate is LOW only if all of it's inputs ar LOW, else it is HIGH. A CMOS OR gate consists of three sections - PMOS, NMOS and Inverter. Each of the two inputs is given to the PMOS and NMOS section respectively, and the output is taken from the inverter section. The schematic of the implemented 2-input CMOS Logic OR gate is as follows. along with the symbol constructed and the output. It is observed that the output of the implemented OR gate is LOW only when all the inputs are LOW. The [netlist](https://github.com/Charaan27/BraunArray-multiplier-KS-adder/blob/main/netlists/cmosOR_netlist.spi) of the design is given here.
 
 <p align="center">
   <br>
@@ -48,10 +48,13 @@ It is one of the digital logic gates that implements logical disjunction. That i
 </p>
 
 ## 2-input XOR gate
-It is one of the digital logic gates that implements the inequality function. That is to say, the output of an XOR gate is HIGH only if the inputs are not alike, else it is LOW. The schematic of the implemented 2-input CMOS Logic XOR gate is as follows. along with the symbol constructed and the output. It is observed that the output of the implemented XOR gate is HIGH only when all the inputs are not alike.
+It is one of the digital logic gates that implements the inequality function. That is to say, the output of an XOR gate is HIGH only if the inputs are not alike, else it is LOW. The schematic of the implemented 2-input CMOS Logic XOR gate is as follows. along with the symbol constructed and the output. It is observed that the output of the implemented XOR gate is HIGH only when all the inputs are not alike. The [netlist](https://github.com/Charaan27/BraunArray-multiplier-KS-adder/blob/main/netlists/cmosXOR_netlist.spi) of the given design is implemented here.
 
 <p align="center">
   <br>
   <img src="https://github.com/Charaan27/BraunArray-multiplier-KS-adder/blob/main/project/cmosXOR/cmosXOR_final.png">
   <br>
 </p>
+
+## Half Adder Circuit
+Thr half adder is a type of binary adder that adds two binary digits, and produces two outputs which are the SUM and CARRY. The SUM is the output of the XOR gates when the two operands ae passed as inputs, and the CARRY is the output of the AND operation of the two operands. Hence the circuit contains an XOR and an AND gate. The circuit, along with the symbol and the waveform are given below. It is observed that the SUM is zero only if either both the operands are 0 or 1 (indicating an overflow). The carry is zero for all cases except for inputs 1 and 1.
