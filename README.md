@@ -377,7 +377,7 @@ The simulation of the circuit testbench is done using **PrimeSim HSPICE**. Two b
 By comparing the obtained waveforms with the [reference waveform](#Reference-Waveform) added earlier, we can conclude that the designed multiplier circuit is working as expected, as is giving out the correct waveform result. 
 
 ```
-NOTE: The input and output waveforms must be interpreted backwards (i.e.) from X3-X1, Y3-Y1 for inputs and P7-P0 for output.
+NOTE: The input and output waveforms must be interpreted from backwards (i.e.) from X3-X1, Y3-Y1 for inputs and P7-P0 for output.
 ```
 
 # Acknowlegdements:
