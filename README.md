@@ -125,7 +125,7 @@ This is the final step and is common to all adders of this family (carry look ah
     ```
     
 ### Illustration
-The illustration of a 3-bit Kogge-Stone Adder is given below: (image taken from [here](https://www.researchgate.net/figure/3-bit-Kogge-stone-adder_fig1_269310519) - cited as reference 4 in [references](#References) section)  
+The illustration of a 3-bit Kogge-Stone Adder is given below: (image taken from [here](https://www.researchgate.net/figure/3-bit-Kogge-stone-adder_fig1_269310519) - cited as reference 5 in [references](#References) section)  
 
 <p align="center">
   <br>
