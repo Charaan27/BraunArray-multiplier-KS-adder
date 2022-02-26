@@ -368,4 +368,4 @@ The simulation of the circuit testbench is done using **PrimeSim HSPICE**. Two b
   <br>
 </p>
 
-By comparing the obtained waveforms with the [reference waveform](#Reference-Waveform)
+By comparing the obtained waveforms with the [reference waveform](#Reference-Waveform) added earlier, we can conclude that the designed multiplier circuit is working as expected, as is giving out the correct waveform result. 
