@@ -372,3 +372,15 @@ The simulation of the circuit testbench is done using **PrimeSim HSPICE**. Two b
 </p>
 
 By comparing the obtained waveforms with the [reference waveform](#Reference-Waveform) added earlier, we can conclude that the designed multiplier circuit is working as expected, as is giving out the correct waveform result. 
+
+```
+NOTE: The input and output waveforms must be interpreted backwards (i.e.) from X3-X1, Y3-Y1 for inputs and P7-P0 for output.
+```
+
+# Acknowlegdements:
+- [Mr. Kunal Ghosh](https://www.vlsisystemdesign.com/about-us/) - Co-Founder at VLSI System Design (VSD) Corp.
+- [Mr. Chinmaya Panda](https://ee.iith.ac.in/staff.html) - Technical Officer, Department of Electrical Engineering, IIT Hyderabad
+- [Mr. Sameer Durgoji](https://www.udemy.com/user/sameer-s-durgoji/) - Final year student - BTech ECE at NIT Karnataka
+- [Synopsys India](https://www.synopsys.com/company/contact-synopsys/office-locations/india/about-synopsys-india.html)
+- [Mr. Sumanto Kar](https://www.linkedin.com/in/sumanto-kar-0424391a9/?originalSubdomain=in) - Sr. Project Technical Assistant, IIT Bombay
+- [Mr. Mukesh Nadar](https://www.linkedin.com/in/mukesh-nadar-b310761b2/?originalSubdomain=in) - Senior Web developer at ISF Analytica and Informatica
