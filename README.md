@@ -128,7 +128,6 @@ The illustration of a 3-bit Kogge-Stone Adder is given below:
 The circuit, along with the symbol, waveform and [netlist](https://github.com/Charaan27/BraunArray-multiplier-KS-adder/blob/main/netlists/ks_adder_netlist.spi) are given here.
 
 <p align="center">
-  <br>
   <img src="https://github.com/Charaan27/BraunArray-multiplier-KS-adder/blob/main/project/ks_adder/ks_adder_final.png">
   <br>
 </p>  
