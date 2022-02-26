@@ -14,6 +14,7 @@ This repository contains a detailed report on the design of a 4x4 Braun Array Mu
   - [Half Adder](#Half-Adder)  
   - [Full Adder](#Full-Adder)  
   - [3-bit Kogge-Stone Adder](#3-bit-Kogge-Stone-Adder)
+- [Braun Array Multiplier](#Braun-Array-Multiplier)
 
 # Introduction
 The need for efficient binary multipliers that could be incorporated in Digital ICs has seen an unprecendented rise over the last few years. The conventional architecture of a binary multiplier involves a series of AND gates that will generate what is called as a _partial product_, and later these are added up with each other to produce the product. This corresponds to a variety of binary multipliers known as **parallel array multipliers**. However, this is an extensively computational process, when compared with other binary operations. But, binary multiplication is a very important arithmetic operation, which is primarily being used in Digital Signal Processing applications. For example, the _Multiply and Accumulate (MAC)_ operation is used in implementing Finite Impulse Response (FIR) Filters, and other DSP algorithms. Hence it becomes important to find out ways to optimize the architecure of binary multipliers thus increasing its efficiency, while decreasing its area occupancy, computation time and power dissipation. One of the efficient parallel array multipliers that is widely used for this purpose is the **Braun Array Multiplier**. It is a type of a high-speed parallel array multiplier that comes with a relatively lesser area and delay, thus making it one of the ideal array multipliers to use. Braun Array Multipliers require a **carry look-ahead adder** in the design. In order to improve the speed and efficiency of the multiplier, a **Kogge-Stone Adder** has been implemented in the place of the carry look-ahead adder. It is a form of a parallel-prefix adder that comes with a lower fan-out at each of its stages, thus increasing the performance for typical CMOS processes.
@@ -132,3 +133,6 @@ The circuit, along with the symbol, waveform and [netlist](https://github.com/Ch
   <img src="https://github.com/Charaan27/BraunArray-multiplier-KS-adder/blob/main/project/ks_adder/ks_adder_final.png">
   <br>
 </p>  
+
+# Braun Array Multiplier  
+
