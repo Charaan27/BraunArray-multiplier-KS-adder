@@ -26,13 +26,13 @@ This repository contains a detailed report on the design of a 4x4 Braun Array Mu
 The need for efficient binary multipliers that could be incorporated in Digital ICs has seen an unprecendented rise over the last few years. The conventional architecture of a binary multiplier involves a series of AND gates that will generate what is called as a _partial product_, and later these are added up with each other to produce the product. This corresponds to a variety of binary multipliers known as **parallel array multipliers**. However, this is an extensively computational process, when compared with other binary operations. But, binary multiplication is a very important arithmetic operation, which is primarily being used in Digital Signal Processing applications. For example, the _Multiply and Accumulate (MAC)_ operation is used in implementing Finite Impulse Response (FIR) Filters, and other DSP algorithms. Hence it becomes important to find out ways to optimize the architecure of binary multipliers thus increasing its efficiency, while decreasing its area occupancy, computation time and power dissipation. One of the efficient parallel array multipliers that is widely used for this purpose is the **Braun Array Multiplier**. It is a type of a high-speed parallel array multiplier that comes with a relatively lesser area and delay, thus making it one of the ideal array multipliers to use. Braun Array Multipliers require a **carry look-ahead adder** in the design. In order to improve the speed and efficiency of the multiplier, a **Kogge-Stone Adder** has been implemented in the place of the carry look-ahead adder. It is a form of a parallel-prefix adder that comes with a lower fan-out at each of its stages, thus increasing the performance for typical CMOS processes.
 
 # Reference Circuit
-An n-bit Braun Array Multiplier is realised using (n−1)<sup>2</sup> full adders, n<sup>2</sup> AND gates and a (n−1) bit carry look-ahead adder. Hence for a 4-bit Braun Array Multiplier, we require **9 Full Adders, 16 Logic AND gates and a 3-bit Kogge-Stone Adder**. The reference circuit of the same is shown below (taken from [here](https://ieeexplore.ieee.org/document/8389113) - cited reference 2 in [references](#References) section).
+An n-bit Braun Array Multiplier is realised using (n−1)<sup>2</sup> full adders, n<sup>2</sup> AND gates and a (n−1) bit carry look-ahead adder. Hence for a 4-bit Braun Array Multiplier, we require **9 Full Adders, 16 Logic AND gates and a 3-bit Kogge-Stone Adder**. The reference circuit of the same is shown below (taken from [here](https://ieeexplore.ieee.org/document/8389113) - cited as reference 2 in [references](#References) section).
 <p align="center">
   <img src="https://github.com/Charaan27/BraunArray-multiplier-KS-adder/blob/main/project/references/reference_circuit.png">
 </p>
 
 # Reference Waveform
-For a n\*m multiplication, the number of bits in the product cannot be less than max(m,n) and cannot be more than (m+n), unless one of the two numbers is zero. If the two operands are of similar size (i.e.) n\*n, then the product is of size 2n. Hence for a 4-bit multiplication, the operands are of size 4-bits, while the product is of size 8-bits. In total we will have 8 waveforms for the input (4 + 4 inputs) and 8 waveforms for the output, leading to a total of 16 waveforms. The reference waveform for 4-bit multiplication could be found below (taken from [here](https://ieeexplore.ieee.org/document/8869307) - cited reference 3 in [references](#References) section).  
+For a n\*m multiplication, the number of bits in the product cannot be less than max(m,n) and cannot be more than (m+n), unless one of the two numbers is zero. If the two operands are of similar size (i.e.) n\*n, then the product is of size 2n. Hence for a 4-bit multiplication, the operands are of size 4-bits, while the product is of size 8-bits. In total we will have 8 waveforms for the input (4 + 4 inputs) and 8 waveforms for the output, leading to a total of 16 waveforms. The reference waveform for 4-bit multiplication could be found below (taken from [here](https://ieeexplore.ieee.org/document/8869307) - cited as reference 3 in [references](#References) section).  
 
 <p align="center">
   <br>
@@ -125,7 +125,7 @@ This is the final step and is common to all adders of this family (carry look ah
     ```
     
 ### Illustration
-The illustration of a 3-bit Kogge-Stone Adder is given below:  
+The illustration of a 3-bit Kogge-Stone Adder is given below: (image taken from [here](https://www.researchgate.net/figure/3-bit-Kogge-stone-adder_fig1_269310519) - cited as reference 4 in [references](#References) section)  
 
 <p align="center">
   <br>
@@ -396,4 +396,5 @@ Charaan S, Pre-Final year student, B.E. ECE, Madras Institute of Technology, Ann
 2. A. Raju and S. K. Sa, "Design and performance analysis of multipliers using Kogge Stone Adder," 2017 3rd International Conference on Applied and Theoretical Computing and Communication Technology (iCATccT), 2017, pp. 94-99, [doi: 10.1109/ICATCCT.2017.8389113.](https://ieeexplore.ieee.org/document/8389113)
 3. B. Neeraja and R. S. P. Goud, "Design of an Area Efficient Braun Multiplier using High Speed Parallel Prefix Adder in Cadence," 2019 IEEE International Conference on Electrical, Computer and Communication Technologies (ICECCT), 2019, pp. 1-5, [doi: 10.1109/ICECCT.2019.8869307.](https://ieeexplore.ieee.org/document/8869307)
 4. A. Sindhu, A. Bhatia, "8 Bit Kogge Stone Adder," [Project Report, Indian Institute of Technology, Kanpur](https://www.cl.cam.ac.uk/research/srg/han/ACS-P35/8-bit-KoggeStone-Adder.pdf)
-5. Kogge-Stone Adder - [Wikipedia Article](https://en.wikipedia.org/wiki/Kogge%E2%80%93Stone_adder)
+5. Rengasamy, Dr. Dhanabal & V, Barathi & Sahoo, Sarat Kumar & Samhitha, Naamatheertham & Cherian, Neethu & Jacob, Pretty. (2014). Implementation of floating point MAC using Residue Number System. Journal of Theoretical and Applied Information Technology. 62. 461-465. [10.1109/ICROIT.2014.6798385](https://www.researchgate.net/publication/269310519_Implementation_of_floating_point_MAC_using_Residue_Number_System). 
+6. Kogge-Stone Adder - [Wikipedia Article](https://en.wikipedia.org/wiki/Kogge%E2%80%93Stone_adder)
