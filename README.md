@@ -370,7 +370,7 @@ The simulation of the circuit testbench is done using **PrimeSim HSPICE**. Two b
 
 <p align="center">
   <br>
-  <img src="https://github.com/Charaan27/BraunArray-multiplier-KS-adder/blob/main/project/braun_multiplier/braun_multiplier_waveform_final.png">
+  <img src="https://github.com/Charaan27/BraunArray-multiplier-KS-adder/blob/main/project/braun_multiplier/braun_multiplier_final_waveform.png">
   <br>
 </p>
 
