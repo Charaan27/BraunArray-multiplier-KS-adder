@@ -86,3 +86,42 @@ A full adder is yet another type of binary multiplier, which also accounts for t
   <img src="https://github.com/Charaan27/BraunArray-multiplier-KS-adder/blob/main/project/full_adder/fulladder_final.png">
   <br>
 </p>
+
+## 3-bit Kogge-Stone Adder
+Adders form a crucial part in every multiplier circuit. In this multiplier, a Kogge-Stone Adder has been implemented. The concept of this multiplier was developed by two scientists [Peter M. Kogge](https://en.wikipedia.org/wiki/Peter_Kogge) and [Harold S. Stone](https://en.wikipedia.org/wiki/Harold_S._Stone). KS-Adder is a **parallel-prefix** form **carry look-ahead adder**. It generates carry in O(log n) time and is widely considered as one of the fastest adders and is widely used as high performance arithmetic circuits. Parallel prefix adders are indicative of the fact that the carries generated at each stage are computed in parallel. 
+
+### Theory
+The theory of KS-Adder can be categorized under three stages:
+
+1. **Pre- Processing**:  
+This step involves computation of generate and propagate signals corresponding to each pair of bits in A and B. These signals are given by the logic equations below:  
+
+    ```
+    pi  = Ai  xor  Bi
+    gi  = Ai  and  Bi
+    ```
+
+2. **Carry Look Ahead Adder network**:  
+This block differentiates KSA from other adders and is the  main force behind its high performance. This step  involves computation of  carries corresponding  to each  bit.  It uses group propagate and generate as intermediate signals which are given by the logic equations below: 
+
+    ```
+    Pi:j   = Pi:k+1 and Pk:j 
+    Gi:j   = Gi:k+1 or (Pi:k+1 and Gk:j)
+    ```
+    
+3. **Post-Processing**:  
+This is the final step and is common to all adders of this family (carry look ahead). It involves computation of sum  bits. Sum  bits are computed by the logic given below:  
+
+    ```
+    Si  = pi  xor Ci-1 
+    ```
+    
+### Illustration
+The illustration of a 3-bit Kogge-Stone Adder is given below:  
+
+<p align="center">
+  <br>
+  <img src="https://github.com/Charaan27/BraunArray-multiplier-KS-adder/blob/main/project/ks_adder/3-bit-Kogge-stone-adder.png">
+  <br>
+</p>  
+
