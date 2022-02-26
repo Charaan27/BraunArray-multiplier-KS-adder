@@ -18,6 +18,9 @@ This repository contains a detailed report on the design of a 4x4 Braun Array Mu
   - [Circuit Schematic](#Circuit-Schematic)
   - [Netlist](#Netlist)
   - [Simulation and waveform results](#Simulation-and-waveform-results)
+ - [Acknowlegdements](#Acknowlegdements)
+ - [Author](#Author)
+ - [References](#References)
 
 # Introduction
 The need for efficient binary multipliers that could be incorporated in Digital ICs has seen an unprecendented rise over the last few years. The conventional architecture of a binary multiplier involves a series of AND gates that will generate what is called as a _partial product_, and later these are added up with each other to produce the product. This corresponds to a variety of binary multipliers known as **parallel array multipliers**. However, this is an extensively computational process, when compared with other binary operations. But, binary multiplication is a very important arithmetic operation, which is primarily being used in Digital Signal Processing applications. For example, the _Multiply and Accumulate (MAC)_ operation is used in implementing Finite Impulse Response (FIR) Filters, and other DSP algorithms. Hence it becomes important to find out ways to optimize the architecure of binary multipliers thus increasing its efficiency, while decreasing its area occupancy, computation time and power dissipation. One of the efficient parallel array multipliers that is widely used for this purpose is the **Braun Array Multiplier**. It is a type of a high-speed parallel array multiplier that comes with a relatively lesser area and delay, thus making it one of the ideal array multipliers to use. Braun Array Multipliers require a **carry look-ahead adder** in the design. In order to improve the speed and efficiency of the multiplier, a **Kogge-Stone Adder** has been implemented in the place of the carry look-ahead adder. It is a form of a parallel-prefix adder that comes with a lower fan-out at each of its stages, thus increasing the performance for typical CMOS processes.
@@ -384,3 +387,13 @@ NOTE: The input and output waveforms must be interpreted backwards (i.e.) from X
 - [Synopsys India](https://www.synopsys.com/company/contact-synopsys/office-locations/india/about-synopsys-india.html)
 - [Mr. Sumanto Kar](https://www.linkedin.com/in/sumanto-kar-0424391a9/?originalSubdomain=in) - Sr. Project Technical Assistant, IIT Bombay
 - [Mr. Mukesh Nadar](https://www.linkedin.com/in/mukesh-nadar-b310761b2/?originalSubdomain=in) - Senior Web developer at ISF Analytica and Informatica
+
+# Author:
+Charaan S, Pre-Final year student, B.E. ECE, Madras Institute of Technology, Anna University, Chennai, India
+
+# References:
+1. Shinde, Kunjan & Kumar, K. & Rashmi, D. & Rukhsar, R. & Shilpa, H. & Vidyashree, C.. (2018). A Novel Approach to Design Braun Array Multiplier Using Parallel Prefix Adders for Parallel Processing Architectures: Second International Conference, ICSCS 2018, Kollam, India, April 19–20, 2018, Revised Selected Papers. [10.1007/978-981-13-1936-5_62.](https://www.researchgate.net/publication/327856495_A_Novel_Approach_to_Design_Braun_Array_Multiplier_Using_Parallel_Prefix_Adders_for_Parallel_Processing_Architectures_Second_International_Conference_ICSCS_2018_Kollam_India_April_19-20_2018_Revised_Se)
+2. A. Raju and S. K. Sa, "Design and performance analysis of multipliers using Kogge Stone Adder," 2017 3rd International Conference on Applied and Theoretical Computing and Communication Technology (iCATccT), 2017, pp. 94-99, [doi: 10.1109/ICATCCT.2017.8389113.](https://ieeexplore.ieee.org/document/8389113)
+3. B. Neeraja and R. S. P. Goud, "Design of an Area Efficient Braun Multiplier using High Speed Parallel Prefix Adder in Cadence," 2019 IEEE International Conference on Electrical, Computer and Communication Technologies (ICECCT), 2019, pp. 1-5, [doi: 10.1109/ICECCT.2019.8869307.](https://ieeexplore.ieee.org/document/8869307)
+4. A. Sindhu, A. Bhatia, "8 Bit Kogge Stone Adder," [Project Report, Indian Institute of Technology, Kanpur](https://www.cl.cam.ac.uk/research/srg/han/ACS-P35/8-bit-KoggeStone-Adder.pdf)
+5. Kogge-Stone Adder - [Wikipedia Article](https://en.wikipedia.org/wiki/Kogge%E2%80%93Stone_adder)
