@@ -41,9 +41,9 @@ For a n\*m multiplication, the number of bits in the product cannot be less than
 
 # Tools used
 
-- OS: [CentOS Linux 7.9.2009](https://wiki.centos.org/Manuals/ReleaseNotes/CentOS7.2009#Packages_released_as_7.8.2003_updates_with_older_packages_on_the_7.9.2009_install_media)
-- Design Platform: [Synopsys Custom Design](https://www.synopsys.com/implementation-and-signoff/custom-design-platform.html) - comes with [Synopsys Custom Compiler](https://www.synopsys.com/implementation-and-signoff/custom-design-platform/custom-compiler.html)
-- Simulation Software: [PrimeSim HSPICE](https://www.synopsys.com/implementation-and-signoff/ams-simulation/primesim-hspice.html)
+- OS: [CentOS Linux 7.9.2009](https://wiki.centos.org/Manuals/ReleaseNotes/CentOS7.2009#Packages_released_as_7.8.2003_updates_with_older_packages_on_the_7.9.2009_install_media) - An open-sourced Linux Distribution, initially developed by 'The CentOS Project' and currently affliated with Red Hat. 
+- Design Platform: [Synopsys Custom Design Platform](https://www.synopsys.com/implementation-and-signoff/custom-design-platform.html) - The Synopsys Custom Design Platform is a unified suite of design and verification tools that accelerates the development of robust analog and mixed-signal designs. The platform features [Custom Compiler™](https://www.synopsys.com/implementation-and-signoff/custom-design-platform/custom-compiler.html), a fast, easy-to-use design, and layout solution, [PrimeSim™ Continuum](https://www.synopsys.com/implementation-and-signoff/ams-simulation.html), which delivers industry-leading circuit simulation performance, and best-in-class technologies for parasitic extraction, reliability analysis, and physical verification. 
+- Simulation Software: [PrimeSim HSPICE](https://www.synopsys.com/implementation-and-signoff/ams-simulation/primesim-hspice.html) PrimeSim HSPICE provides accurate circuit simulation and offers foundries-certified MOS device models with state-of-the-art simulation and analysis algorithms. With extensive usage in chip/package/board/backplane signal integrity simulation, cell and memory characterization, and analog mixed signal IC design, PrimeSim HSPICE is a powerful, trusted and comprehensive circuit simulator.
 - CMOS Process used for device modeling: SAED 32/28nm PDK
 
 # Subcircuits
