@@ -360,10 +360,12 @@ v1 x0 gnd! dc=0 pulse ( 0 1.8 0 0.1n 0.1n 40u 80u )
 ```
 
 ## Simulation and waveform results:
-The simulation of the circuit testbench is done using **PrimeSim HSPICE**. Two binary numbers of size 4-bits are given to the multiplier as inputs (through pulse generators). The obtained output is an 8-bit product, and is compared with the reference waveform for the correct working and functionality. The input and output waveforms are given below.
+The simulation of the circuit testbench is done using **PrimeSim HSPICE**. Two binary numbers of size 4-bits are given to the multiplier as inputs (through pulse generators). The obtained output is an 8-bit product, and is compared with the reference waveform for the correct working and functionality. The obtained input and output waveforms are given below.
 
 <p align="center">
   <br>
   <img src="https://github.com/Charaan27/BraunArray-multiplier-KS-adder/blob/main/project/braun_multiplier/braun_multiplier_waveform.png">
   <br>
 </p>
+
+By comparing the obtained waveforms with the [reference waveform](#Reference-Waveform)
