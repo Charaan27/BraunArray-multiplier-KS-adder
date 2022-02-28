@@ -19,6 +19,7 @@ This repository contains a detailed report on the design of a 4x4 Braun Array Mu
   - [Netlist](#Netlist)
   - [Simulation and waveform results](#Simulation-and-waveform-results)
  - [Acknowlegdements](#Acknowlegdements)
+ - [Future Work](#Future-Work)
  - [Author](#Author)
  - [References](#References)
 
@@ -375,6 +376,10 @@ By comparing the obtained waveforms with the [reference waveform](#Reference-Wav
 - [Synopsys India](https://www.synopsys.com/company/contact-synopsys/office-locations/india/about-synopsys-india.html)
 - [Mr. Sumanto Kar](https://www.linkedin.com/in/sumanto-kar-0424391a9/?originalSubdomain=in) - Sr. Project Technical Assistant, IIT Bombay
 - [Mr. Mukesh Nadar](https://www.linkedin.com/in/mukesh-nadar-b310761b2/?originalSubdomain=in) - Senior Web developer at ISF Analytica and Informatica
+
+# Future Work
+- Reducing the jitter occuring due to transition between two levels.
+- Construct multipliers of higher order (8 bits, 16 bits, 32 bits etc.)
 
 # Author:
 Charaan S, Pre-Final year student, B.E. ECE, Madras Institute of Technology, Anna University, Chennai, India
