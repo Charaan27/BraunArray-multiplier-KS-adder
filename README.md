@@ -335,12 +335,6 @@ v2 x1 gnd! dc=0 pulse ( 0 1.8 0 0.1n 0.1n 20u 40u )
 v1 x0 gnd! dc=0 pulse ( 0 1.8 0 0.1n 0.1n 40u 80u )
 
 
-
-
-
-
-
-
 .tran '0.1u' '100u' name=tran
 
 .option primesim_remove_probe_prefix = 0
@@ -351,15 +345,10 @@ v1 x0 gnd! dc=0 pulse ( 0 1.8 0 0.1n 0.1n 40u 80u )
 .temp 25
 
 
-
 .option primesim_output=wdf
 
 
 .option parhier = LOCAL
-
-
-
-
 
 
 .end
@@ -376,9 +365,8 @@ The simulation of the circuit testbench is done using **PrimeSim HSPICE**. Two b
 
 By comparing the obtained waveforms with the [reference waveform](#Reference-Waveform) added earlier, we can conclude that the designed multiplier circuit is working as expected, as is giving out the correct waveform result. 
 
-```
-NOTE: The input and output waveforms must be interpreted from backwards (i.e.) from X3-X1, Y3-Y1 for inputs and P7-P0 for output.
-```
+> NOTE: The input and output waveforms must be interpreted from backwards (i.e.) from X3-X1, Y3-Y1 for inputs and P7-P0 for output.
+
 
 # Acknowlegdements:
 - [Mr. Kunal Ghosh](https://www.vlsisystemdesign.com/about-us/) - Co-Founder at VLSI System Design (VSD) Corp.
